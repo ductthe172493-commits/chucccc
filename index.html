@@ -1,6 +1,7 @@
 index.html
 
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -472,21 +473,18 @@ index.html
         }
 
         canvas {
-            position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: block;
+    transform: translate(-50%, -50%);
+    animation: heart 1.5s ease infinite;
+}
 
-            width: 100%;
-            height: 100%;
-        }
 
-        canvas {
-            /* top: 50%;
-      left: 50%; */
-            z-index: 1;
-            display: block;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            animation: heart 1.5s ease infinite;
-        }
 
         @keyframes heart {
             0% {
@@ -527,8 +525,6 @@ index.html
         </h2>
     </div>
 </div>
-
-    </div>
 
     <canvas id="pinkboard"></canvas>
     <script>
@@ -782,5 +778,6 @@ index.html
 </body>
 
 </html>
+
 
 
